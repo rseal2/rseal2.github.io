@@ -2,13 +2,45 @@
 #about {
     font-family: 'Times New Roman', serif, monospace, sans-serif;
   }
+
+  #about h1, #about h2, #about p {
+    margin: 5px;
+    padding: 0;
+  }
+  
   
   #about h1 {
-    font-size: 5em;
-    color: #333;
+    font-size: 100px;
+    color: black;
+  }
+
+  #about h2 {
+    font-size: 70px;
+    color: black;
   }
   
   #about p {
-    font-size: 1.2em;
-    color: #666;
+    font-size: 50px;
+    color: black;
+  }
+
+  .textContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 150px;
+    width: 40%;
+  }
+
+  .profilePictureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+  } 
+
+  .profilePicture {
+    width: 500px; /* Set the desired width */
+    height: 500px; /* Maintain aspect ratio */
   }
