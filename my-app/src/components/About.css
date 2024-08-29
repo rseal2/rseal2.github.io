@@ -1,46 +1,68 @@
 /* About.css */
 #about {
-    font-family: 'Times New Roman', serif, monospace, sans-serif;
+  font-family: 'Times New Roman', serif, monospace, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#about h1, #about h2, #about p {
+  margin: 5px;
+  padding: 0;
+}
+
+#about h1 {
+  font-size: calc(20px + 4vw);
+  color: black;
+}
+
+#about h2 {
+  font-size: calc(15px + 3vw);
+  color: black;
+}
+
+#about p {
+  font-size: calc(10px + 2vw);
+  color: black;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 20px;
+  width: 80%;
+}
+
+.profilePictureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.profilePicture {
+  width: 100%; 
+  height: auto;
+  max-width: 500px; 
+}
+
+@media (min-width: 768px) {
+  #about {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
   }
 
-  #about h1, #about h2, #about p {
-    margin: 5px;
-    padding: 0;
-  }
-  
-  
-  #about h1 {
-    font-size: 100px;
-    color: black;
-  }
-
-  #about h2 {
-    font-size: 70px;
-    color: black;
-  }
-  
-  #about p {
-    font-size: 50px;
-    color: black;
-  }
-
-  .textContainer { 
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    margin: 150px;
+  .textContainer {
     width: 40%;
+    margin: 20px;
   }
-
-  .profilePictureContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 150px;
-  } 
 
   .profilePicture {
-    width: 500px; /* Set the desired width */
-    height: 500px; /* Maintain aspect ratio */
+    max-width: 500px; 
   }
+}
