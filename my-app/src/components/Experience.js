@@ -43,19 +43,20 @@ const Modal = ({ experience, onClose }) => {
 };
 
 const Experience = () => {
-  const [selectedExperience, setSelectedExperience] = useState(null);
+  // const [selectedExperience, setSelectedExperience] = useState(null);
 
-  const openModal = (experience) => {
-    setSelectedExperience(experience);
-  };
+  // const openModal = (experience) => {
+  //   setSelectedExperience(experience);
+  // };
 
-  const closeModal = () => {
-    setSelectedExperience(null);
-  };
+  // const closeModal = () => {
+  //   setSelectedExperience(null);
+  // };
 
   return (
+    
     <section id="experience">
-      <div className='textContainer'>
+      <div className='exptextContainer'>
         <h2>
           Experience
         </h2> 

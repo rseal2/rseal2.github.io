@@ -4,24 +4,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
   text-align: center;
 }
 
-#experience h2 {
-  text-align: left;
+#experience h2 {  
+  padding: 0;
   margin: 5px;
+  text-align: left;
   font-size: calc(15px + 3vw);
   color: black;
 }
 
-.textContainer {
+.exptextContainer {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-start;
   flex-direction: column;
   margin: 20px;
-  width: 80%;
+  width: 92%;
 }
 
 /* .container {
@@ -92,15 +93,3 @@
   cursor: pointer;
 } */
 
-@media (min-width: 768px) {
-  #experience {
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
-  }
-
-  .textContainer {
-    width: 40%;
-    margin: 20px;
-  }
-}
