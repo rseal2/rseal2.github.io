@@ -1,5 +1,6 @@
 import Introduction from "./components/Introduction";
 import Navbar from "./components/Navbar";
+import About from  "./components/About";
 
 export default function Home() {
   return (
@@ -7,6 +8,9 @@ export default function Home() {
       <Navbar />
         <container className="container mx-auto px-12 py-4">
           <Introduction />
+        </container>
+        <container className="container mx-auto px-12 py-4">
+          <About /> 
         </container>
     </main>
   );
