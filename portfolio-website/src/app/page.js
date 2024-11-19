@@ -1,6 +1,7 @@
 import Introduction from "./components/Introduction";
 import Navbar from "./components/Navbar";
 import About from  "./components/About";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects"; 
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
         </container>
         <container className="container mx-auto px-12 py-4">
           <About /> 
+        </container>
+        <container className="container mx-auto px-12 py-4">
+          <Experience />
         </container>
         <container className="container mx-auto px-12 py-4">
           <Projects />
