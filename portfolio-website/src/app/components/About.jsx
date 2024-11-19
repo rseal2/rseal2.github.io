@@ -12,7 +12,17 @@ const TAB_DATA = [
                 <li>HTML</li>
             </ul>
         )
-    }
+    }, 
+    {
+        title: "Coursework",
+        id: "coursework", 
+        content: (
+            <ul>
+                <li>CS1</li>
+            </ul>
+        )
+    }, 
+
 ];
 
 const About = () => {
@@ -33,7 +43,7 @@ const About = () => {
           width={500}
           height={500}
         />
-        <div>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4"> About Me! </h2>
           <p className="text-base lg:text-lg">
             {" "}
@@ -52,13 +62,14 @@ const About = () => {
               Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("Relevant Coursework")}
-              active={tab === "Relevant Coursework"}
+              selectTab={() => handleTabChange("coursework")}
+              active={tab === "coursework"}
             >
               {" "}
               Relevant Coursework{" "}
             </TabButton>
           </div>
+          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>
       </div>
     </section>
