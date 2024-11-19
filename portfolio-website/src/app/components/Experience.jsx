@@ -8,7 +8,7 @@ const experienceData = [
     id: 1,
     title: "Exp 1",
     description: "This is a project leeeeeeeeeeeeeeeellllllllllllllllllllleeeeee",
-    image: "/images/headshot.png",
+    image: "/images/experience_imgs/hudl.png",
   },
   {
     id: 2,
