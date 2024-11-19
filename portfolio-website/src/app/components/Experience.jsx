@@ -3,28 +3,28 @@
 import React, { useState } from "react";
 import Card from "./Card";
 
-const projectsData = [
+const experienceData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Exp 1",
     description: "This is a project leeeeeeeeeeeeeeeellllllllllllllllllllleeeeee",
     image: "/images/headshot.png",
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Exp 2",
     description: "This is a project",
     image: "/images/headshot.png",
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Exp 3",
     description: "This is a project",
     image: "/images/headshot.png",
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Exp 4",
     description: "This is a project",
     image: "/images/headshot.png",
   },
