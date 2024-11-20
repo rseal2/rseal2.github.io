@@ -44,14 +44,11 @@ const About = () => {
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4"> About Me! </h2>
+          <h2 className="text-4xl font-bold text-[#235347] mb-4"> ABOUT ME </h2>
           <p className="text-base lg:text-lg">
             {" "}
-            I am a full-stack developer with a passion for creating beautiful,
-            responsive, and user-friendly websites. I have experience working
-            with a variety of technologies, including HTML, CSS, JavaScript,
-            React, and Node.js. I am always looking to expand my skillset and
-            learn new things.
+            I am a junior at the University of Nebraska-Lincoln studying Computer Science with minors in Mathematics and Business Management. 
+            I am passionate about software development and am always looking for opportunities to learn and grow! 
           </p>
           <div className="flex flex-row mt-8">
           <TabButton
