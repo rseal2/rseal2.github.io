@@ -45,10 +45,10 @@ const experienceData = [
     title: "University of Nebraska Medical Center", 
     description: "This is a project",
     image: "/images/experience_imgs/unmc.jpg",
-  }
+  },
 ];
 
-const Projects = () => {
+const Experience = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -64,10 +64,10 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-white mt-4">
-        Experience 
+      <h2 className="text-center text-4xl font-bold text-[#235347] mt-5 mb-5">
+        E X P E R I E N C E
       </h2>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12 w-full h-screen">
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
         {experienceData.map((project) => (
           <Card
             key={project.id}
@@ -98,4 +98,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Experience;
