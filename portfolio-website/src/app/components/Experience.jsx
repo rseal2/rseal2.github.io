@@ -2,48 +2,63 @@
 
 import React, { useState } from "react";
 import Card from "./Card";
+import Modal from "./Modal";
 
 const experienceData = [
   {
     id: 1,
     title: "brAIn rot",
+    role: "Software Engineer",
     description: "This is a project",
+    skills: ["React", "JavaScript", "HTML/CSS", "Tailwind", "Firebase"],
     image: "/images/experience_imgs/brainrot.png",
   },
   {
     id: 2,
     title: "Hudl",
+    role: "Software Engineer Intern",
     description: "This is a project",
+    skills: ["React", "TypeScript", "Jest", "C# .NET", "AWS"],
     image: "/images/experience_imgs/hudl.png",
   },
   {
     id: 3,
     title: "Shyft Solutions",
+    role: "Software Engineer Intern",
     description: "This is a project",
+    skills: ["Python", "Java", "Kubernetes", "Docker"],
     image: "/images/experience_imgs/shyftsolutions.png",
   },
   {
     id: 4,
     title: "UNL Economics Department",
+    role: "Research Assistant",
     description: "This is a project",
+    skills: ["Python", "R"],
     image: "/images/experience_imgs/econ.png",
   },
   {
     id: 5,
     title: "Raikes School of Computer Science & Management",
+    role: "Innovation Processes Teacher's Assistant",
     description: "This is a project",
+    skills: ["Figma"],
     image: "/images/experience_imgs/raikes.png",
   }, 
   {
     id: 6, 
     title: "Nebraska Realty", 
+    role: "Marketing Assistant",
     description: "This is a project",
+    skills: ["Microsoft Office Suite"],
     image: "/images/experience_imgs/nebrealty.png",
   }, 
   {
     id: 7, 
     title: "University of Nebraska Medical Center", 
+    role: "Research Assistant",
     description: "This is a project",
+    skills: ["Technical Writing", "Microsoft Office Suite"],
     image: "/images/experience_imgs/unmc.jpg",
   },
 ];
@@ -78,22 +93,15 @@ const Experience = () => {
         ))}
       </div>
 
-      {isModalOpen && selectedProject && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-[#181818] p-6 rounded-lg shadow-lg w-11/12 sm:w-96 h-auto sm:h-80 relative">
-            {/* Close Button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
-            >
-              ✖
-            </button>
-
-            <h2 className="text-2xl font-bold mb-4">{selectedProject.title}</h2>
-            <p className="mb-4">{selectedProject.description}</p>
-          </div>
-        </div>
-      )}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title={selectedProject?.title}
+        role={selectedProject?.role}
+        description={selectedProject?.description}
+        skills={selectedProject?.skills}
+    
+      />
     </>
   );
 };
