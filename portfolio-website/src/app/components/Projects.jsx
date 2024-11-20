@@ -8,31 +8,31 @@ const projectsData = [
     id: 1,
     title: "Seekr",
     description: "This is a project leeeeeeeeeeeeeeeellllllllllllllllllllleeeeee",
-    image: "/images/headshot.png",
+    image: "images/projects_imgs/seekr.png",
   },
   {
     id: 2,
     title: "Qwirkle",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "images/projects_imgs/qwirkle.png",
   },
   {
     id: 3,
     title: "Gig Scheduler",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "images/projects_imgs/gigscheduler.png",
   },
   {
     id: 4,
     title: "Cumulate",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "images/projects_imgs/cumulate.png",
   },
   {
     id: 5,
     title: "Tenaska Business Challenge",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "images/projects_imgs/tenaska.png",
   },
 ];
 
