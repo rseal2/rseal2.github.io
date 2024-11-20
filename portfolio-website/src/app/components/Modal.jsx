@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({ isOpen, onClose, title, role, description, skills }) => {
+const Modal = ({ isOpen, onClose, title, role, description, contributions, skills }) => {
   if (!isOpen) return null;
 
 return (
@@ -15,13 +15,24 @@ return (
     </button>
 
     {/* Modal Content */}
-    {title && <h2 className="text-2xl font-bold mb-4">{title}</h2>}
-    {role && <p className="mb-4">{role}</p>}
-    {description && <p className="mb-4">{description}</p>}
+    {title && <h1 className="text-2xl font-bold mb-2">{title}</h1>}
+    {role && <h2 className="mb-2">{role}</h2>}
+    {description && <p className="mb-2">{description}</p>}
+
+    {/* Contributions */}
+    {contributions.length > 0 && (
+          <div className="mt-6">
+            <h3 className="font-bold">Contributions</h3>
+            <ul className="list-disc ml-6">
+              {contributions.map((contributions, index) => (
+                <li key={index} className="mt-1">
+                  {contributions}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
     
-
-
-
     {/* Skills */}
     {skills.length > 0 && (
       <div className="mt-6">

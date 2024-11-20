@@ -9,7 +9,8 @@ const experienceData = [
     id: 1,
     title: "brAIn rot",
     role: "Software Engineer",
-    description: "This is a project",
+    description: "brAIn rot is a platform designed for developers to create, compare, and visualize algorithms & machine learning models on popular strategy games.",
+    contributions: ["Placeholder"],
     skills: ["React", "JavaScript", "HTML/CSS", "Tailwind", "Firebase"],
     image: "/images/experience_imgs/brainrot.png",
   },
@@ -17,7 +18,8 @@ const experienceData = [
     id: 2,
     title: "Hudl",
     role: "Software Engineer Intern",
-    description: "This is a project",
+    description: "Hudl is a sports-focused software company that helps any team capture, analyze, and share video and data faster and more effectively.",
+    contributions: ["Placeholder"],  
     skills: ["React", "TypeScript", "Jest", "C# .NET", "AWS"],
     image: "/images/experience_imgs/hudl.png",
   },
@@ -26,6 +28,7 @@ const experienceData = [
     title: "Shyft Solutions",
     role: "Software Engineer Intern",
     description: "This is a project",
+    contributions: ["Placeholder"],
     skills: ["Python", "Java", "Kubernetes", "Docker"],
     image: "/images/experience_imgs/shyftsolutions.png",
   },
@@ -34,6 +37,7 @@ const experienceData = [
     title: "UNL Economics Department",
     role: "Research Assistant",
     description: "This is a project",
+    contributions: ["Placeholder"],  
     skills: ["Python", "R"],
     image: "/images/experience_imgs/econ.png",
   },
@@ -42,6 +46,7 @@ const experienceData = [
     title: "Raikes School of Computer Science & Management",
     role: "Innovation Processes Teacher's Assistant",
     description: "This is a project",
+    contributions: ["Placeholder"],
     skills: ["Figma"],
     image: "/images/experience_imgs/raikes.png",
   }, 
@@ -50,6 +55,7 @@ const experienceData = [
     title: "Nebraska Realty", 
     role: "Marketing Assistant",
     description: "This is a project",
+    contributions: ["Placeholder"],
     skills: ["Microsoft Office Suite"],
     image: "/images/experience_imgs/nebrealty.png",
   }, 
@@ -58,6 +64,7 @@ const experienceData = [
     title: "University of Nebraska Medical Center", 
     role: "Research Assistant",
     description: "This is a project",
+    contributions: ["Placeholder"],
     skills: ["Technical Writing", "Microsoft Office Suite"],
     image: "/images/experience_imgs/unmc.jpg",
   },
@@ -79,8 +86,8 @@ const Experience = () => {
 
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-[#235347] mt-5 mb-5">
-        E X P E R I E N C E
+      <h2 className="text-center text-5xl font-bold text-[#235347] mt-5 mb-5">
+        EXPERIENCE
       </h2>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
         {experienceData.map((project) => (
@@ -99,6 +106,7 @@ const Experience = () => {
         title={selectedProject?.title}
         role={selectedProject?.role}
         description={selectedProject?.description}
+        contributions={selectedProject?.contributions}
         skills={selectedProject?.skills}
     
       />
