@@ -6,28 +6,46 @@ import Card from "./Card";
 const experienceData = [
   {
     id: 1,
-    title: "Exp 1",
-    description: "This is a project leeeeeeeeeeeeeeeellllllllllllllllllllleeeeee",
-    image: "/images/experience_imgs/hudl.png",
+    title: "brAIn rot",
+    description: "This is a project",
+    image: "/images/experience_imgs/brainrot.png",
   },
   {
     id: 2,
-    title: "Exp 2",
+    title: "Hudl",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "/images/experience_imgs/hudl.png",
   },
   {
     id: 3,
-    title: "Exp 3",
+    title: "Shyft Solutions",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "/images/experience_imgs/shyftsolutions.png",
   },
   {
     id: 4,
-    title: "Exp 4",
+    title: "UNL Economics Department",
     description: "This is a project",
-    image: "/images/headshot.png",
+    image: "/images/experience_imgs/econ.png",
   },
+  {
+    id: 5,
+    title: "Raikes School of Computer Science & Management",
+    description: "This is a project",
+    image: "/images/experience_imgs/raikes.png",
+  }, 
+  {
+    id: 6, 
+    title: "Nebraska Realty", 
+    description: "This is a project",
+    image: "/images/experience_imgs/nebrealty.png",
+  }, 
+  {
+    id: 7, 
+    title: "University of Nebraska Medical Center", 
+    description: "This is a project",
+    image: "/images/experience_imgs/unmc.jpg",
+  }
 ];
 
 const Projects = () => {
@@ -49,7 +67,7 @@ const Projects = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4">
         Experience 
       </h2>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12 w-full h-screen">
         {experienceData.map((project) => (
           <Card
             key={project.id}
