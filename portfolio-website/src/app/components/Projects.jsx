@@ -6,25 +6,31 @@ import Card from "./Card";
 const projectsData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Seekr",
     description: "This is a project leeeeeeeeeeeeeeeellllllllllllllllllllleeeeee",
     image: "/images/headshot.png",
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Qwirkle",
     description: "This is a project",
     image: "/images/headshot.png",
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Gig Scheduler",
     description: "This is a project",
     image: "/images/headshot.png",
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Cumulate",
+    description: "This is a project",
+    image: "/images/headshot.png",
+  },
+  {
+    id: 5,
+    title: "Tenaska Business Challenge",
     description: "This is a project",
     image: "/images/headshot.png",
   },
