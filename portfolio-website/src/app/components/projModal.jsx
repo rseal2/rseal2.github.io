@@ -28,7 +28,7 @@ return (
     {/* Modal Content */}
     {title && <h1 className="text-4xl font-bold mb-2">{title}</h1>}
     {timeline && <h2 className="text-xl mb-2">{timeline}</h2>}
-    {description && <i className="mb-2">{description}</i>}
+    {description && <h1 className="mb-2">{description}</h1>}
     
     {/* Skills */}
     {skills.length > 0 && (
