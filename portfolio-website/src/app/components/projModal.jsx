@@ -1,14 +1,12 @@
 import React, {useEffect} from "react";
 
-const Modal = ({ isOpen, onClose, title, role, timeline, description, contributions, skills }) => {
+const projModal = ({ isOpen, onClose, title, timeline, description, contributions, skills }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-
-    // Cleanup to ensure class is removed when component unmounts
     return () => {
       document.body.classList.remove("overflow-hidden");
     };
@@ -29,23 +27,8 @@ return (
 
     {/* Modal Content */}
     {title && <h1 className="text-4xl font-bold mb-2">{title}</h1>}
-    {role && <h2 className="text-[#235347] text-2xl mb-2">{role}</h2>}
     {timeline && <h2 className="text-xl mb-2">{timeline}</h2>}
     {description && <i className="mb-2">{description}</i>}
-
-    {/* Contributions */}
-    {contributions.length > 0 && (
-          <div className="mt-6">
-            <h3 className="text-[#235347] text-2xl font-bold">Contributions:</h3>
-            <ul className="list-disc ml-6">
-              {contributions.map((contributions, index) => (
-                <li key={index} className="text-lg mt-1">
-                  {contributions}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
     
     {/* Skills */}
     {skills.length > 0 && (
@@ -68,4 +51,4 @@ return (
     );  
 };
 
-export default Modal;
+export default projModal;

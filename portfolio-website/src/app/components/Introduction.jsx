@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
   return (
@@ -8,11 +7,11 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold">
-          Hello! I'm
+          Hello! I&apos;m
             <span className="text-transparent bg-clip-text bg-[#235347]"> Raimee Seal</span>
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-2xl mb-6 lg:text-3xl">
-            👩‍💻 I'm an aspiring full-stack software engineer 
+            👩‍💻 I&apos;m an aspiring full-stack software engineer 
           </p>
           <div>
             <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black w-full sm:w-fit">Hire Me</button>
