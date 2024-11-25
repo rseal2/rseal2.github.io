@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Card from "./Card";
-import Modal from "./projModal";
+import Modal from "./ProjModal";
 
 const projectsData = [
   {

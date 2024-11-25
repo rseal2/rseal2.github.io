@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 
-const projModal = ({ isOpen, onClose, title, timeline, description, contributions, skills }) => {
+const ProjModal = ({ isOpen, onClose, title, timeline, description, contributions, skills }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -51,4 +51,4 @@ return (
     );  
 };
 
-export default projModal;
+export default ProjModal;
