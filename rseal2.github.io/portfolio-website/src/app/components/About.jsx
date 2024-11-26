@@ -41,7 +41,7 @@ const About = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image className="ml-[-60px]" src="/images/trees.png" alt="Trees" width={900} height={900}/>
+        <Image className="ml-[-50px] max-w-[700px] max-h-[500px] w-full h-auto" src="/images/trees.png" alt="Trees" width={1000} height={900}/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-5xl font-bold text-[#235347] mb-4"> ABOUT ME </h2>
           <p className="text-xl">
