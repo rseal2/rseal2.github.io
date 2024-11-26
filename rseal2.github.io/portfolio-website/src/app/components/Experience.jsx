@@ -134,6 +134,7 @@ const Experience = () => {
           <Card
             key={project.id}
             title={project.title}
+            role={project.role} 
             imgUrl={project.image}
             onClick={() => handleCardClick(project)}
           />
