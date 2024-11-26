@@ -38,7 +38,7 @@ return (
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="px-4 py-2 bg-white rounded text-[#235347] font-bold"
+              className="px-4 py-2 bg-[#235347] rounded text-white font-bold"
             >
               {skill}
             </span>

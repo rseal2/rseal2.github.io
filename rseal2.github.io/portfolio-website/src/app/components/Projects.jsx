@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Card from "./Card";
-import Modal from "./ProjModal";
+import ProjModal from "./ProjModal";
 
 const projectsData = [
   {
@@ -63,7 +63,7 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-[#235347] mt-5 mb-5">
+      <h2 className="text-center text-5xl font-bold text-[#235347] mt-5 mb-5">
         PROJECTS
       </h2>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -76,7 +76,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <Modal
+      <ProjModal
         isOpen={isModalOpen}
         onClose={closeModal}
         title={selectedProject?.title}
