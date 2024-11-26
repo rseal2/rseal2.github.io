@@ -25,7 +25,7 @@ const TAB_DATA = [
   {
     title: "Coursework",
     id: "coursework",
-    content: ["Software Engineering", "Data Structures & Algorithms", "Computer Problems", "UNIX Programming", "Data & Models", "Automata", "Operating Systems Principles"],
+    content: ["Software Engineering", "Data Structures & Algorithms", "Computer Problems", "UNIX Programming", "Data & Models", "Automata", "Operating Systems Principles", "Calculus I-III", "Linear Algebra", "Differential Equations"],
   },
 ];
 
@@ -39,12 +39,20 @@ const About = () => {
     });
   };
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image className="ml-[-50px] max-w-[700px] max-h-[500px] w-full h-auto" src="/images/trees.png" alt="Trees" width={1000} height={900}/>
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-5xl font-bold text-[#235347] mb-4"> ABOUT ME </h2>
-          <p className="text-xl">
+<section className="text-white">
+  <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <div className="flex justify-center items-center h-[500px]"> {/* Set a fixed height for the image container */}
+      <Image
+        className="ml-[-50px] max-w-[700px] w-full h-auto object-contain"
+        src="/images/trees.png"
+        alt="Trees"
+        width={700}
+        height={500}
+      />
+    </div>
+    <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+      <h2 className="text-5xl font-bold text-[#235347] mb-4">ABOUT ME</h2>
+      <p className="text-xl">
             {" "}
             I am a junior at the University of Nebraska-Lincoln studying
             Computer Science with minors in Mathematics and Business Management.
