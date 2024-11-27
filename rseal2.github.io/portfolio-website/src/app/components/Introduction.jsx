@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HeroSection = () => {
+const Introduction = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -20,8 +20,7 @@ const HeroSection = () => {
             👩‍💻 I&apos;m an aspiring software engineer
           </p>
           <div>
-
-          <Link href="https://tinyurl.com/raimeeresume">
+            <Link href="https://tinyurl.com/raimeeresume">
               {" "}
               {/* Resume Button */}
               <button className="px-4 py-4 rounded-lg mr-4 bg-[#235347] hover:bg-[#08624c]">
@@ -36,7 +35,6 @@ const HeroSection = () => {
                 />
               </button>
             </Link>
-
             <Link href="https://www.linkedin.com/in/raimee-seal">
               {/* LinkedIn Button */}
               <button className="px-4 py-4 rounded-lg mr-4 bg-[#235347] hover:bg-[#08624c]">
@@ -51,7 +49,6 @@ const HeroSection = () => {
                 />
               </button>
             </Link>
-
             <Link href="https://github.com/rseal2">
               {" "}
               {/* GitHub Button */}
@@ -67,32 +64,32 @@ const HeroSection = () => {
                 />
               </button>
             </Link>
-
-              {/* Email Button */}
-              <button 
-              onClick={() => window.location.href = 'mailto:raimseal@gmail.com'}
-              className="px-4 py-4 rounded-lg mr-4 bg-[#235347] hover:bg-[#08624c]">
-                <img
-                  src="/images/logos/email.png"
-                  className="inline-block w-8 h-8"
-                  style={{
-                    transform: "scale(1.1)",
-                    maxWidth: "50px",
-                    maxHeight: "50px",
-                  }}
-                />
-              </button>{" "}
-
+            {/* Email Button */}
+            <button
+              onClick={() => {
+                window.location.href = "mailto:raimseal@gmail.com";
+              }}
+              className="px-4 py-4 rounded-lg mr-4 bg-[#235347] hover:bg-[#08624c]"
+            >
+              <img
+                src="/images/logos/email.png"
+                className="inline-block w-8 h-8"
+                style={{
+                  transform: "scale(1.1)",
+                  maxWidth: "50px",
+                  maxHeight: "50px",
+                }}
+              />
+            </button>{" "}
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-lg bg-[#181818] w-[350px] h-[250px] relative lg:w-[400px] lg:h-[300px]">
+          <div className="rounded-lg bg-[#181818] w-[350px] h-[300px] relative lg:w-[400px] lg:h-[300px] flex items-center justify-center">
             <Image
               src="/images/headshot.png"
               alt="headshot"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={350}
-              height={150}
+              width={400}
+              height={300}
             />
           </div>
         </div>
@@ -101,4 +98,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Introduction;
